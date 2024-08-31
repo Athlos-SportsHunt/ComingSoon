@@ -1,0 +1,16 @@
+
+
+# Ignoring Enviornment Directorys
+env/
+
+# catch file
+__pycache__/
+
+# Ignoring .env file
+.env
+
+
+# ignoring db 
+*.sqlite3
+.deployment
+.vscode\settings.json
