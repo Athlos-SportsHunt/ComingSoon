@@ -1,11 +1,11 @@
 from django.db import models
 
 # Create your models here.
-from django.db import models
 
-class NewsletterSignup(models.Model):
+class Updates(models.Model):
     email = models.EmailField(unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def _str_(self):
-        return self.email
+        return f" mail:{self.email}"
+ 

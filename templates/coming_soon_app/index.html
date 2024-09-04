@@ -174,13 +174,15 @@
         <!-- Third Scroll: Stay Updated -->
         <section id="stay-updated" class="section">
             <h2>Stay Updated</h2>
-            <p>Be the first to know when we launch. Sign up for our newsletter!</p>
-            <form class="email-form" id="email-form">
-                <input type="email" placeholder="Enter your email" required>
+            <p>Be the first to know when we launch. Sign up for more updates!</p>
+               
+            <form class="email-form" id="email-form" action="{% url 'coming_soon_app:submit_email' %}" method="post">
+            {% csrf_token %} 
+                <input type="email" placeholder="Enter your email" required name = "email">
                 <button type="submit">Notify Me</button>
-            </form>
+            </form> 
         </section>
-
+      
         
     </div>
 
