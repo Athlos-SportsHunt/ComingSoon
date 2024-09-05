@@ -8,4 +8,3 @@ class Updates(models.Model):
 
     def _str_(self):
         return f" mail:{self.email}"
- 
